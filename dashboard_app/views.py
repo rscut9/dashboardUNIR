@@ -26,10 +26,10 @@ def login_view(request):
     
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('home')
 
 
-@login_required
+
 def home_view(request):
     return render(request, 'home.html')
 
