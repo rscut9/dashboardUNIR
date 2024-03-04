@@ -1,5 +1,6 @@
 Django==3.2
 djongo==1.3.6
 pymongo==3.12
+gunicorn
 pytz
 django-cors-headers
