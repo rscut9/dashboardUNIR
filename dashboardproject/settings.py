@@ -83,7 +83,7 @@ DATABASES = {
             'username': 'admin',
             'password': 'admin+123+',
             'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-1'
+            'authMechanism': 'SCRAM-SHA-256'
         }
     }
 }

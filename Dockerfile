@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Ejecutar el servidor de desarrollo de Django
-CMD ["docker exec -it dashboard-web-1 python3", "manage.py", "runserver"]
+CMD ["python3", "manage.py", "runserver"]
