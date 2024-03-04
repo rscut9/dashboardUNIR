@@ -11,5 +11,8 @@ RUN pip install -r requirements.txt
 # Copiar el resto del código fuente de la aplicación al contenedor
 COPY . .
 
+# Exponer el puerto 8000
+EXPOSE 8000
+
 # Ejecutar el servidor de desarrollo de Django
 CMD ["python3", "manage.py", "runserver"]
