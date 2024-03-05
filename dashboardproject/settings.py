@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bt+1a#hj6@+nhp4+4j1-rpk!0z)o_2!@k0i+0v2f^v1^1g-&8q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -83,7 +83,7 @@ DATABASES = {
             'username': 'admin',
             'password': 'admin+123+',
             'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-256'
+            'authMechanism': 'SCRAM-SHA-1'
         }
     }
 }

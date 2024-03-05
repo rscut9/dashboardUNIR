@@ -11,11 +11,9 @@ RUN pip install -r requirements.txt
 # Copiar el resto del código fuente de la aplicación al contenedor
 COPY . .
 
-# Recoger archivos estáticos
-RUN python manage.py collectstatic --noinput
 
 # Exponer el puerto en el que tu app estará disponible
 EXPOSE 8000
 
 # Usar Gunicorn para servir la aplicación
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "dashboardproject.wsgi:application"]
+CMD ["python3", "manage.py", "runserver"]
